@@ -418,14 +418,10 @@ with tab1:
     Berikut adalah contoh hasil deteksi model pada video rekaman CCTV jalan tol. Terlihat bahwa model mampu mendeteksi berbagai kendaraan dengan bounding box yang cukup akurat, bahkan pada kondisi malam hari. Namun, beberapa kendaraan kecil atau yang berada jauh dari kamera masih bisa terlewatkan.
     </div>""", unsafe_allow_html=True)
 
-    video_path = "/Users/gibranariq/Documents/project/vehicle_detection/hasil_deteksi.mp4"
 
-    if os.path.exists(video_path):
-        st.video(video_path)
-        st.markdown("""
-        <div class="info-box">
-        Hasil deteksi pada video menunjukkan bahwa model mampu mendeteksi berbagai kendaraan dengan baik, meskipun ada beberapa kesalahan klasifikasi.
-        </div>""", unsafe_allow_html=True)
+    video_path = "https://youtu.be/4NZURigNABs"
+
+    st.video(video_path)
 
 # ══════════════════════════════════════════════════════════════
 # TAB 2 — Model Comparison
